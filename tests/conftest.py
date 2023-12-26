@@ -191,7 +191,6 @@ class SnapshotFixture(Snapshot):
         pass
 
 
-@pytest.fixture
 def snapshots(snapshot: Snapshot) -> SnapshotFixture:
     """Fixture for a snapshot."""
     snapshot.snapshot_dir = "tests/snapshots"
